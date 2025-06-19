@@ -38,7 +38,7 @@
                             <span class="text-gray-300">{{ $event['time'] }}</span>
                         </div>
                         <a href="#" class="inline-block bg-primary hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors w-full text-center">
-                            Register Now
+                            Lihat di Instagram
                         </a>
                     </div>
                 </div>

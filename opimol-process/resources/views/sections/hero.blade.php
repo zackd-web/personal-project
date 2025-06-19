@@ -1,6 +1,6 @@
 <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
     <div class="absolute inset-0 z-0">
-        <img src="{{ asset('images/one-piece-ocean.jpg') }}" alt="One Piece Ocean" class="w-full h-full object-cover opacity-30">
+        <img src="{{ asset('images/.jpg') }}" alt="One Piece Ocean" class="w-full h-full object-cover opacity-30">
         <div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-dark"></div>
     </div>
     <div class="container mx-auto px-4 z-10 text-center">
@@ -25,11 +25,11 @@
             </a>
         </div>
         <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="#events" class="bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                Upcoming Events
+            <a href="#about" class="bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                Jelajahi Website
             </a>
             <a href="#contact" class="bg-transparent hover:bg-secondary/10 border border-secondary text-secondary font-bold py-3 px-6 rounded-lg transition-colors">
-                Join Our Crew
+                Ayo Gabung
             </a>
         </div>
     </div>

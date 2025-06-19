@@ -2,7 +2,7 @@
     <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0 flex items-center">
-                <img src="{{ asset('images/straw-hat-logo.png') }}" alt="Straw Hat Logo" class="w-10 h-10 mr-2">
+                <img src="{{ asset('images/opimol-logo.jpg') }}" alt="Straw Hat Logo" class="w-10 h-10 mr-2">
                 <a href="#" class="text-2xl font-bold text-gradient">OPIMOL</a>
             </div>
             <div class="flex flex-wrap gap-4 md:gap-8 justify-center">
@@ -16,9 +16,9 @@
         </div>
         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>
-                &copy; {{ date('Y') }} OPIMOL - One Piece Indonesia Moluccas. All rights reserved.
+                &copy; {{ date('Y') }} OPIMOL - One Piece Indonesia IMO Liar.
                 <br>
-                <span class="text-sm">One Piece is owned by Eiichiro Oda and Shueisha. This is a fan community website.</span>
+                <span class="text-sm">Website dibuat penuh 🧡 oleh komunitas ini.</span>
             </p>
         </div>
     </div>

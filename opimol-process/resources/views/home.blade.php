@@ -7,4 +7,5 @@
     @include('sections.events')
     @include('sections.gallery')
     @include('sections.contact')
+    @include('sections.faq')
 @endsection

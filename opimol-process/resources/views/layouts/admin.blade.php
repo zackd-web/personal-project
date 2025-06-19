@@ -70,21 +70,21 @@
                                 <i class="fas fa-tachometer-alt me-2"></i> Dashboard
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('admin.characters*') ? 'active' : '' }}" href="{{ route('admin.characters.index') }}">
                                 <i class="fas fa-users me-2"></i> Characters
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('admin.events*') ? 'active' : '' }}" href="{{ route('admin.events.index') }}">
                                 <i class="fas fa-calendar-alt me-2"></i> Events
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('admin.gallery*') ? 'active' : '' }}" href="{{ route('admin.gallery.index') }}">
                                 <i class="fas fa-images me-2"></i> Gallery
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item mt-4">
                             <a class="nav-link" href="{{ route('home') }}" target="_blank">
                                 <i class="fas fa-external-link-alt me-2"></i> View Website

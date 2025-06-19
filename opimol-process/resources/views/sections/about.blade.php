@@ -1,10 +1,10 @@
 <section id="about" class="py-20 bg-gray-800 relative overflow-hidden">
     <div class="absolute inset-0 opacity-10">
-        <img src="{{ asset('images/one-piece-map.jpg') }}" alt="One Piece Map" class="w-full h-full object-cover">
+        <img src="{{ asset('') }}" alt="One Piece Map" class="w-full h-full object-cover">
     </div>
     <div class="container mx-auto px-4 relative z-10">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold mb-4">About OPIMOL</h2>
+            <h2 class="text-4xl font-bold mb-4">About  <span class="font-bold text-secondary mb-2">OPIMOL</span></h2>
             <div class="w-16 h-1 bg-secondary mx-auto"></div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-12">
@@ -36,8 +36,8 @@
                         <p class="text-sm text-gray-300">Bahas seru soal One Piece, juga rutin bedah chapter terbaru. Cocok nih buat kamu yang maniak One Piece dan suka diskusi ><</p>
                     </div>
                     <div class="bg-dark/50 p-4 rounded-lg">
-                        <h4 class="font-bold text-secondary mb-2">7</h4>
-                        <p class="text-sm text-gray-300">Tahun Petualangan Bersama</p>
+                        <h4 class="font-bold text-secondary mb-2">7 Tahun Petualangan Bersama</h4>
+                        <p class="text-sm text-gray-300"></p>
                     </div>
                     <div class="bg-dark/50 p-4 rounded-lg">
                         <h4 class="font-bold text-secondary mb-2">Kuis dan Event</h4>
@@ -48,7 +48,7 @@
                    Ayo bergabung bersama kami sampai ending One Piece
                 </p>
                 <a href="#contact" class="inline-block bg-secondary hover:bg-yellow-500 text-dark font-bold py-3 px-6 rounded-lg transition-colors">
-                    Join Our Crew
+                    Ayo Gabung!!
                 </a>
             </div>
         </div>
