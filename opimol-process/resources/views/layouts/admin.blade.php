@@ -61,7 +61,7 @@
             <div class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="position-sticky pt-3">
                     <div class="d-flex align-items-center justify-content-center mb-4">
-                        <img src="{{ asset('images/straw-hat-logo.png') }}" alt="OPIMOL Logo" width="40" height="40" class="me-2">
+                        <img src="{{ asset('images/opimol-logo.jpg') }}" alt="OPIMOL Logo" width="40" height="40" class="me-2">
                         <h5 class="mb-0">OPIMOL Admin</h5>
                     </div>
                     <ul class="nav flex-column">
@@ -70,24 +70,24 @@
                                 <i class="fas fa-tachometer-alt me-2"></i> Dashboard
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('admin.characters*') ? 'active' : '' }}" href="{{ route('admin.characters.index') }}">
-                                <i class="fas fa-users me-2"></i> Characters
-                            </a>
-                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('admin.events*') ? 'active' : '' }}" href="{{ route('admin.events.index') }}">
-                                <i class="fas fa-calendar-alt me-2"></i> Events
+                            <a class="nav-link {{ request()->routeIs('admin.characters*') ? 'active' : '' }}" href="{{ route('admin.characters.index') }}">
+                                <i class="fas fa-users me-2"></i> Admin OPIMOL
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('admin.gallery*') ? 'active' : '' }}" href="{{ route('admin.gallery.index') }}">
-                                <i class="fas fa-images me-2"></i> Gallery
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('admin.events*') ? 'active' : '' }}" href="{{ route('admin.events.index') }}">
+                                <i class="fas fa-calendar-alt me-2"></i> Event
                             </a>
-                        </li> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('admin.gallery*') ? 'active' : '' }}" href="{{ route('admin.gallery.index') }}">
+                                <i class="fas fa-images me-2"></i> Galeri Kenangan
+                            </a>
+                        </li>
                         <li class="nav-item mt-4">
                             <a class="nav-link" href="{{ route('home') }}" target="_blank">
-                                <i class="fas fa-external-link-alt me-2"></i> View Website
+                                <i class="fas fa-external-link-alt me-2"></i> Lihat Website
                             </a>
                         </li>
                     </ul>

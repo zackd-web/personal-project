@@ -1,20 +1,20 @@
 <section id="characters" class="py-20 bg-dark relative overflow-hidden">
     <div class="absolute inset-0 opacity-5">
-        <img src="{{ asset('images/wanted-posters-bg.jpg') }}" alt="Wanted Posters Background" class="w-full h-full object-cover">
+        <img src="{{ asset('images/wanted-posters-bg.jpg') }}" alt="" class="w-full h-full object-cover">
     </div>
     <div class="container mx-auto px-4 relative z-10">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold mb-4">Favorite Characters</h2>
+            <h2 class="text-4xl font-bold mb-4">Para Admin</h2>
             <div class="w-16 h-1 bg-secondary mx-auto"></div>
             <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
-                Meet the beloved characters that our community members can't stop talking about!
+                Inilah para otak di balik OPIMOL. Merekalah yang mengembangkan komunitas ini sampai serame sekarang. <span class="text-orange-500"> All hail to OPIMOL Admin</span>🙇‍♂️🙇‍♀️
             </p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             @foreach($characters as $character)
-            <div class="bg-gray-800/80 p-6 rounded-lg text-center card-hover pirate-border">
-                <div class="relative w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
-                    <img src="{{ asset('images/characters/' . $character['image']) }}" alt="{{ $character['name'] }}" class="w-full h-full object-cover">
+            <div class="bg-gray-800/80 p-6 rounded-lg object-center text-center pirate-border hover:border-orange-400 transition-all hover:scale-105">
+                <div class="relative w-32 h-32 rounded-3xl mx-auto mb-4 rounded-3xl rounded-full">
+                    <img src="{{ asset('images/characters/' . $character['image']) }}" alt="{{ $character['name'] }}" class="w-full h-full rounded-3xl object-cover">
                 </div>
                 <h3 class="text-xl font-bold mb-2">{{ $character['name'] }}</h3>
                 <p class="text-gray-300 mb-2">{{ $character['role'] }}</p>

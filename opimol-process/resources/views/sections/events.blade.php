@@ -4,10 +4,12 @@
     </div>
     <div class="container mx-auto px-4 relative z-10">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold mb-4">Upcoming Events</h2>
+            <h2 class="text-4xl font-bold mb-4">Ini Event yang udah <span class="text-orange-500">OPIMOL laksanakan</span></h2>
             <div class="w-16 h-1 bg-secondary mx-auto"></div>
+            <p class="mt-4 text-gray-300 max-w-2xl mx-auto text-xl text-gray-300">
+                OPIMOL beberapa kali di undang ke acara official One Piece, keren kan💥✨🎉
+            </p>
         </div>
-        
         <!-- Event Filter -->
         <div class="flex flex-wrap justify-center gap-4 mb-12">
             <button class="filter-btn active bg-primary text-white px-6 py-2 rounded-full" data-filter="all">All Events</button>
@@ -19,7 +21,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach($events as $event)
             <div class="event-item {{ $event['category'] }} card-hover" data-category="{{ $event['category'] }}">
-                <div class="bg-gray-700 rounded-lg overflow-hidden">
+                <div class="bg-gray-900 border border-gray-700 hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-3">
                     <div class="relative">
                         <img src="{{ asset('images/events/' . $event['image']) }}" alt="{{ $event['title'] }}" class="w-full h-64 object-cover">
                         <div class="absolute top-0 right-0 bg-primary text-white px-4 py-2 rounded-bl-lg font-bold">

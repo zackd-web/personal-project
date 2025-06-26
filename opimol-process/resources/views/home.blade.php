@@ -6,6 +6,7 @@
     @include('sections.characters')
     @include('sections.events')
     @include('sections.gallery')
-    @include('sections.contact')
+    @include('sections.testimonial')
     @include('sections.faq')
+    @include('sections.admin')
 @endsection
