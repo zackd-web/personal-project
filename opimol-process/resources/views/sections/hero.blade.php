@@ -8,7 +8,7 @@
             Selamat Datang di <span class="font-bold text-secondary mb-2">OPIMOL</span>
         </h1>
         <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300">
-            Hanya disini, dapatkan dopamin baru melalui postingan aneka ragam member. Belajar skill baru? Bisa. Tapi kita lebih jago fangirling sambil gabung framework. Yuk gabung sekarang... atau enggak juga ngapain apa-apa sih. Kita juga lagi mager promosi. Capek. 
+            Hanya disini, Komunitas One Piece ter-rame. Emang Seberapa rame nya? Ayo gabung aja biar bisa ikutan seru-seru barenga Nakama lain. 
         </p>
 
         <div class="flex flex-col md:flex-row justify-center gap-6 mb-16">
@@ -35,7 +35,7 @@
         <div class="flex justify-center space-x-6">
             <a href="https://discord.gg/opimol" target="_blank" class="group">
                 <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-110">
-                    <i class="fab fa-discord text-2xl text-blue-600"></i>
+                    <i class="fab fa-tiktokr text-2xl text-blue-600"></i>
                 </div>
             </a>
             <a href="https://www.instagram.com/opiimol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="group">

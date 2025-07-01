@@ -2,7 +2,7 @@
     <section class="py-10 bg-gray-800" x-data="testimonialCarousel()">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white-800">Testimoni Member</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white-800"><span class="text-orange-500">Testimoni Member</span></h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Kisah nyata dari para pemalas produktif: ngoding dikit, fesnukan banyak. Tapi tetap keren (kadang).
                 </p>

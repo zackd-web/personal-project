@@ -21,7 +21,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach($events as $event)
             <div class="event-item {{ $event['category'] }} card-hover" data-category="{{ $event['category'] }}">
-                <div class="bg-gray-900 border border-gray-700 hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-3">
+                <div class="bg-gray-900 border border-gray-700 hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-2">
                     <div class="relative">
                         <img src="{{ asset('images/events/' . $event['image']) }}" alt="{{ $event['title'] }}" class="w-full h-64 object-cover">
                         <div class="absolute top-0 right-0 bg-primary text-white px-4 py-2 rounded-bl-lg font-bold">
