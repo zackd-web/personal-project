@@ -2,7 +2,7 @@
     <section id="faq" class="py-20 bg-dark">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4 animate-on-scroll animate-slide-up">Tanya-tanya dulu yuk‼</h2>
+                <h2 class="text-4xl font-bold mb-4 animate-on-scroll animate-slide-up">Tanya-tanya <span class="text-orange-500">dulu yuk‼</span></h2>
                 <div class="w-16 h-1 bg-secondary mx-auto animate-on-scroll animate-scale-in animate-delay-200"></div>
                 <p class="text-xl text-gray-300 animate-on-scroll animate-fade-in animate-delay-300">Pertanyaan-pertanyaan yang sering muncul nih dan mungkin kalian tanyain.</p>
                 <p class="text-xl text-gray-300">Kalau masih penasaran, gas chat admin aja😁😎</p>

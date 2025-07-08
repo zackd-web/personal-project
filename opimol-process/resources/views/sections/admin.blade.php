@@ -10,8 +10,8 @@
                 </p>
             </div>
 
-            <div class="max-w-4xl mx-auto space-y-8">
-                <div class="bg-dark shadow-lg hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-8">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md-grid-cols-2 space-y-8 grid">
+                <div class="bg-dark shadow-lg border border-gray-700 hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-8">
                     <div class="flex flex-col md:flex-row items-center gap-6">
                         <div class="flex-shrink-0">
                             <div class="w-32 h-32 rounded-3xl bg-gradient-to-br from-orange-400 to-yellow-500 p-1">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="bg-dark shadow-lg hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-8">
+                <div class="bg-dark shadow-lg border border-gray-700 hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-8">
                     <div class="flex flex-col md:flex-row items-center gap-6">
                         <div class="flex-shrink-0">
                             <div class="w-32 h-32 rounded-3xl bg-gradient-to-br from-orange-400 to-yellow-500 p-1">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <div class="bg-dark shadow-lg hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-8">
+                <div class="bg-dark shadow-lg border border-gray-700 hover:border-orange-400 transition-all hover:scale-105 rounded-lg p-8">
                     <div class="flex flex-col md:flex-row items-center gap-6">
                         <div class="flex-shrink-0">
                             <div class="w-32 h-32 rounded-3xl bg-gradient-to-br from-orange-400 to-yellow-500 p-1">

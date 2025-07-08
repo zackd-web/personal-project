@@ -18,7 +18,7 @@
         </button>
     </nav>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-dark/90 backdrop-blur-sm w-full">
+    <div id="mobile-menu" class="hidden md:hidden sm:hidden lg:hidden xl:hidden bg-dark/90 backdrop-blur-sm w-full">
         <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <a href="#home" class="hover:text-secondary transition-colors">Beranda</a>
             <a href="#about" class="hover:text-secondary transition-colors">Tentang OPIMOL</a>

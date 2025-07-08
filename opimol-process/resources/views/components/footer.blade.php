@@ -22,5 +22,18 @@
                 <span class="text-sm">Website dibuat penuh 🧡 oleh komunitas ini.</span>
             </p>
         </div>
+        <div class="flex justify-center mt-8">
+            <div class="flex justify-center md:justify-start gap-4">
+                <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                    <i class="fab fa-instagram text-white"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                    <i class="fab fa-tiktok text-white"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                    <i class="fab fa-youtube text-white"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </footer>

@@ -35,7 +35,7 @@
         <div class="flex justify-center space-x-6">
             <a href="https://discord.gg/opimol" target="_blank" class="group">
                 <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-110">
-                    <i class="fab fa-tiktokr text-2xl text-blue-600"></i>
+                    <i class="fab fa-tiktok text-2xl text-blue-600"></i>
                 </div>
             </a>
             <a href="https://www.instagram.com/opiimol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="group">

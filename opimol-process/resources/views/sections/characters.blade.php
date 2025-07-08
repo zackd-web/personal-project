@@ -12,7 +12,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             @foreach($characters as $character)
-            <div class="bg-gray-800/80 p-6 rounded-lg object-center text-center pirate-border hover:border-orange-400 transition-all hover:scale-105">
+            <div class="bg-gray-800 p-6 rounded-lg object-center border border-gray-700 text-center hover:border-orange-400 transition-all hover:scale-105">
                 <div class="relative w-32 h-32 rounded-3xl mx-auto mb-4 rounded-3xl rounded-full">
                     <img src="{{ asset('images/characters/' . $character['image']) }}" alt="{{ $character['name'] }}" class="w-full h-full rounded-3xl object-cover">
                 </div>

@@ -40,7 +40,8 @@
                         <p class="text-sm text-gray-300">Event OPIMOL Berhadiah. Banyak kuis One Piece dan event berhadiah lho. Bisa dapat Action Figure, Saldo Dana, Komik One Piece. Ayo adu skill kuis mu disini </p>
                     </div>
                 </div>
-                <p class="text-gray-300 mb-6">
+
+                <p class="text-gray-300 mb-6 gap-y-8">
                    Ayo bergabung bersama kami sampai ending One Piece
                 </p>
                 <a href="#join" class="inline-block bg-secondary hover:bg-yellow-500 text-dark font-bold py-3 px-6 rounded-lg transition-colors">
