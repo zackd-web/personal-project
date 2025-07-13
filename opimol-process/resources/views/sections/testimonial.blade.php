@@ -3,12 +3,12 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white-800"><span class="text-orange-500">Testimoni Member</span></h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                <p data-aos="fade-right" class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Kisah nyata dari para pemalas produktif: ngoding dikit, fesnukan banyak. Tapi tetap keren (kadang).
                 </p>
             </div>
 
-            <div class="max-w-4xl mx-auto relative">
+            <div data-aos="zoom-in-up" class="max-w-4xl mx-auto relative">
                 <div class="shadow-lg border-0 rounded-lg p-8 md:p-12 bg-gray-900">
                     <div class="flex flex-col md:flex-row items-center gap-8">
                         <div class="flex-shrink-0">
