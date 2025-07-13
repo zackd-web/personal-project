@@ -4,18 +4,16 @@
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold mb-4 animate-on-scroll animate-slide-up">Tanya-tanya <span class="text-orange-500">dulu yuk‼</span></h2>
                 <div class="w-16 h-1 bg-secondary mx-auto animate-on-scroll animate-scale-in animate-delay-200"></div>
-                <p class="text-xl text-gray-300 animate-on-scroll animate-fade-in animate-delay-300">Pertanyaan-pertanyaan yang sering muncul nih dan mungkin kalian tanyain.</p>
-                <p class="text-xl text-gray-300">Kalau masih penasaran, gas chat admin aja😁😎</p>
+                <p data-aos="fade-right" data-aos-delay="500" class="text-xl text-gray-300 animate-on-scroll animate-fade-in animate-delay-300">Pertanyaan-pertanyaan yang sering muncul nih dan mungkin kalian tanyain.</p>
+                <p data-aos="fade-right" data-aos-delay="400" class="text-xl text-gray-300">Kalau masih penasaran, gas chat admin aja😁😎</p>
             </div>
             
             <div class="max-w-3xl mx-auto">
                 <!-- FAQ 1 -->
-                <div x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
-                    <button @click="open = !open"  class="faq-toggle flex justify-between items-center w-full p-5 font-medium text-left bg-gray-800 rounded-t-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"  aria-expanded="false">
+                <div data-aos="zoom-in-up" data-aos-delay="100" x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
+                    <button @click="open = !open" class=" flex justify-between items-center w-full p-5 font-medium text-left bg-gray-800 rounded-t-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"  aria-expanded="false">
                         <span>Gimana cara gabung OPIMOL min?</span>
-                        <svg class="w-6 h-6 faq-arrow transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <i :class="{ 'rotate-180': open }" class="transition-transform duration-300 fa-solid fa-angle-down"></i>
                     </button>
                     <div x-show="open" x-transition.duration.300ms  class="faq-content bg-gray-700 rounded-b-lg overflow-hidden">
                         <div class="text-gray-300 p-5">
@@ -25,12 +23,10 @@
                 </div>
 
                 <!-- FAQ 2 -->
-                <div x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
+                <div data-aos="zoom-in-up" data-aos-delay="200" x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
                     <button @click="open = !open"  class="faq-toggle flex justify-between items-center w-full p-5 font-medium text-left bg-gray-800 rounded-t-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"  aria-expanded="false">
                         <span>Yang baru ngikutin One Piece boleh gabung ga?</span>
-                        <svg class="w-6 h-6 faq-arrow transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <i :class="{ 'rotate-180': open }" class="transition-transform duration-300 fa-solid fa-angle-down"></i>
                     </button>
                     <div x-show="open" x-transition.duration.300ms  class="faq-content bg-gray-700 rounded-b-lg overflow-hidden">
                         <div class="text-gray-300 p-5">
@@ -40,12 +36,10 @@
                 </div>
 
                 <!-- FAQ 3 -->
-               <div x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
+               <div data-aos="zoom-in-up" data-aos-delay="300" x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
                     <button @click="open = !open"  class="faq-toggle flex justify-between items-center w-full p-5 font-medium text-left bg-gray-800 rounded-t-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"  aria-expanded="false">
                         <span>Boleh bahas apa aja di grup nya?</span>
-                        <svg class="w-6 h-6 faq-arrow transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <i :class="{ 'rotate-180': open }" class="transition-transform duration-300 fa-solid fa-angle-down"></i>
                     </button>
                     <div x-show="open" x-transition.duration.300ms  class="faq-content bg-gray-700 rounded-b-lg overflow-hidden">
                         <div class="text-gray-300 p-5">
@@ -55,12 +49,10 @@
                 </div>
 
                 <!-- FAQ 4 -->
-                <div x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
+                <div data-aos="zoom-in-up" data-aos-delay="400" x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
                     <button @click="open = !open"  class="faq-toggle flex justify-between items-center w-full p-5 font-medium text-left bg-gray-800 rounded-t-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"  aria-expanded="false">
                         <span>Udah gabung komunitas lain nih, tetep boleh masuk OPIMOL ga?</span>
-                        <svg class="w-6 h-6 faq-arrow transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <i :class="{ 'rotate-180': open }" class="transition-transform duration-300 fa-solid fa-angle-down"></i>
                     </button>
                     <div x-show="open" x-transition.duration.300ms  class="faq-content bg-gray-700 rounded-b-lg overflow-hidden">
                         <div class="text-gray-300 p-5">
@@ -70,12 +62,10 @@
                 </div>
 
                 <!-- FAQ 5 -->
-               <div x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
+               <div data-aos="zoom-in-up" data-aos-delay="500" x-data="{ open: false }" class="mb-4 animate-on-scroll animate-slide-up animate-delay-100">
                     <button @click="open = !open"  class="faq-toggle flex justify-between items-center w-full p-5 font-medium text-left bg-gray-800 rounded-t-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"  aria-expanded="false">
                         <span>Ada event apa aja min di OPIMOL</span>
-                        <svg class="w-6 h-6 faq-arrow transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <i :class="{ 'rotate-180': open }" class="transition-transform duration-300 fa-solid fa-angle-down"></i>
                     </button>
                     <div x-show="open" x-transition.duration.300ms  class="faq-content bg-gray-700 rounded-b-lg overflow-hidden">
                         <div class="text-gray-300 p-5">
