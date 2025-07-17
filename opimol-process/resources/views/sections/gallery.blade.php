@@ -11,7 +11,7 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @forelse($galleryImages as $image)
-                <div class="group overflow-hidden rounded-lg shadow-lg bg-gray-800 transition-transform duration-300 hover:scale-105">
+                <div data-aos="zoom-in-up" class="group overflow-hidden rounded-lg shadow-lg bg-gray-800 transition-transform duration-300 hover:scale-105">
                     <div class="relative h-64 overflow-hidden hover:border-orange-400 transition-colors">
                         <img 
                             src="{{ asset('images/gallery/' . $image->image) }}" 
