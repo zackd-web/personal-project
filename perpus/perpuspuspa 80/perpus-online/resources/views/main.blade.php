@@ -140,14 +140,15 @@
             <div class="relative z-10 container mx-auto px-4">
                 <div class="text-center mb-12">
                     <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Koleksi Buku Terpopuler</h3>
-                    <p class="text-gray-600 max-w-2xl mx-auto">
+                    <div class="w-24 h-1.5 bg-blue-600 mx-auto mb-4"></div>
+                    <p class="text-2xl text-gray-600 max-w-2xl mx-auto">
                         Temukan berbagai koleksi buku menarik yang tersedia di perpustakaan kami
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Buku 1: bumiii.jpg -->
-                    <div class="relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative bg-white rounded-xl border border-blue-600 transform transition-all duration-300 hover:scale-105 overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="relative h-56 bg-cover bg-center" style="background-image: url('{{ asset('grid-gallery/bumiii.jpg') }}');">
                             <div class="absolute top-2 left-2 bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center shadow-md">
                                 <i class="fas fa-star text-white text-lg"></i>
@@ -166,7 +167,7 @@
                     </div>
 
                     <!-- Buku 2: matahari.jpg -->
-                    <div class="relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative bg-white rounded-xl border border-blue-600 transform transition-all duration-300 hover:scale-105 overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="relative h-56 bg-cover bg-center" style="background-image: url('{{ asset('grid-gallery/matahari.jpg') }}');">
                             <div class="absolute top-2 left-2 bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center shadow-md">
                                 <i class="fas fa-star text-white text-lg"></i>
@@ -185,7 +186,7 @@
                     </div>
 
                     <!-- Buku 3: saggaras.jpg -->
-                    <div class="relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative bg-white rounded-xl border border-blue-600 transform transition-all duration-300 hover:scale-105 overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="relative h-56 bg-cover bg-center" style="background-image: url('{{ asset('grid-gallery/saggaras.jpg') }}');">
                             <div class="absolute top-2 left-2 bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center shadow-md">
                                 <i class="fas fa-star text-white text-lg"></i>
@@ -204,7 +205,7 @@
                     </div>
 
                     <!-- Buku 4: bulan.jpg -->
-                    <div class="relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative bg-white rounded-xl border border-blue-600 transform transition-all duration-300 hover:scale-105 overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="relative h-56 bg-cover bg-center" style="background-image: url('{{ asset('grid-gallery/bulan.jpg') }}');">
                             <div class="absolute top-2 left-2 bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center shadow-md">
                                 <i class="fas fa-star text-white text-lg"></i>
@@ -223,7 +224,7 @@
                     </div>
 
                     <!-- Buku 5: bibigill.jpg -->
-                    <div class="relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative bg-white rounded-xl border border-blue-600 transform transition-all duration-300 hover:scale-105 overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="relative h-56 bg-cover bg-center" style="background-image: url('{{ asset('grid-gallery/bibigill.jpg') }}');">
                             <div class="absolute top-2 left-2 bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center shadow-md">
                                 <i class="fas fa-star text-white text-lg"></i>
@@ -242,7 +243,7 @@
                     </div>
 
                     <!-- Buku 6: comet.jpg -->
-                    <div class="relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="relative bg-white rounded-xl border border-blue-600 transform transition-all duration-300 hover:scale-105 overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="relative h-56 bg-cover bg-center" style="background-image: url('{{ asset('grid-gallery/comet.jpg') }}');">
                             <div class="absolute top-2 left-2 bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center shadow-md">
                                 <i class="fas fa-star text-white text-lg"></i>
@@ -269,7 +270,8 @@
             <div class="container mx-auto px-4 ">
                 <div class="text-center mb-12">
                     <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Galeri Kegiatan</h3>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Dokumentasi berbagai kegiatan literasi dan pembelajaran di perpustakaan desa</p>
+                    <div class="w-24 h-1.5 bg-blue-600 mx-auto mb-4"></div>
+                    <p class="text-2xl text-gray-600 max-w-2xl mx-auto">Dokumentasi berbagai kegiatan literasi dan pembelajaran di perpustakaan desa</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-2 gap-3"
@@ -362,18 +364,102 @@
             </div>
         </div>
 
+        <section id="guru" class="py-16 bg-gray-50 ">
+          <div class="container mx-auto px-4">
+            <div
+              class="text-center mb-12"
+              data-aos="fade-up">
+              <div
+                class="flex justify-center items-center text-4xl text-blue-600 mb-4">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Struktur Organisasi Perpustakaan <br> "PUSPA"
+              </h2>
+               <p class="text-2xl md:text-4xl font-bold text-gray-600 max-w-2xl mx-auto mb-4">
+                Pancur Mayong Jepara
+              </p>
+              <div class="w-24 h-1.5 bg-blue-600 mx-auto mb-4"></div>
+            </div>
+
+            <div class="mb-16" data-aos="fade-up" data-aos-delay="100">
+              <div
+                class="relative bg-white shadow-lg border border-blue-600 rounded-xl overflow-hidden max-w-md mx-auto transform transition-all duration-300 hover:scale-105">
+                <div class="p-6 text-center">
+                  <h4 class="text-2xl font-bold text-gray-900 mb-2">Petinggi Desa Pancur</h4>
+                  <span class="text-lg text-blue-600 font-semibold">Pelindung</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-16" data-aos="fade-up" data-aos-delay="100">
+               <div class="relative bg-white shadow-lg rounded-xl border border-blue-600 overflow-hidden max-w-md mx-auto transform transition-all duration-300 hover:scale-105">
+                <div class="p-6 text-center">
+                  <h4 class="text-2xl font-bold text-gray-900 mb-2">Khirzun Ni'am</h4>
+                  <span class="text-lg text-blue-600 font-semibold">Kepala Perpustakaan</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-white shadow-lg rounded-lg border border-blue-600 overflow-hidden transform transition-all duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="250">
+                <div class="p-5 text-center">
+                  <h4 class="text-xl font-semibold text-gray-800 mb-1">Mulyono Saputro</h4>
+                  <span class="text-md text-gray-600">Pelayanan Teknis</span>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg border border-blue-600 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-5 text-center">
+                  <h4 class="text-xl font-semibold text-gray-800 mb-1">Hasanuddin</h4>
+                  <span class="text-md text-gray-600">Pelayanan Teknis</span>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg border border-blue-600 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-5 text-center">
+                  <h4 class="text-xl font-semibold text-gray-800 mb-1">M. Nurul Huda</h4>
+                  <span class="text-md text-gray-600">Pelayanan Pemustaka</span>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg border border-blue-600 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-5 text-center">
+                  <h4 class="text-xl font-semibold text-gray-800 mb-1">Titik Ulif H.</h4>
+                  <span class="text-md text-gray-600">Pelayanan Pemustaka</span>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg border border-blue-600 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-5 text-center">
+                  <h4 class="text-xl font-semibold text-gray-800 mb-1">M. Thoha Mansur</h4>
+                  <span class="text-md text-gray-600">Pelayanan Teknologi Informasi</span>
+                </div>
+              </div>
+
+              <div class="bg-white shadow-lg border border-blue-600 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-5 text-center">
+                  <h4 class="text-xl font-semibold text-gray-800 mb-1">Edy Sunryo</h4>
+                  <span class="text-md text-gray-600">Pelayanan Teknologi Informasi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Kontak Section with Cards -->
         <section id="kontak" class="py-16 bg-gray-100">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
                     <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Kontak & Lokasi</h3>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Hubungi kami atau kunjungi langsung perpustakaan desa</p>
+                    <div class="w-24 h-1.5 bg-blue-600 mx-auto mb-4"></div>
+                    <p class="text-2xl text-gray-600 text-gray-600 max-w-2xl mx-auto">Hubungi kami atau kunjungi langsung perpustakaan desa</p>
                 </div>
                 
                 <!-- Contact Cards -->
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-2 gap-6 mb-12">
                     <!-- Alamat Card -->
-                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                    <div class="bg-white rounded-lg border border-blue-600 transform transition-all duration-300 hover:scale-105 shadow-md p-6 text-center hover:shadow-lg transition duration-300">
                         <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-map-marker-alt text-green-600 text-2xl"></i>
                         </div>
@@ -386,7 +472,7 @@
                     </div>
 
                     <!-- Telepon Card -->
-                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                    <div class="bg-white rounded-lg border border-blue-600 transform transition-all duration-300 hover:scale-105 shadow-md p-6 text-center hover:shadow-lg transition duration-300">
                         <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-phone text-blue-600 text-2xl"></i>
                         </div>
@@ -398,7 +484,7 @@
                     </div>
 
                     <!-- Email Card -->
-                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                    <div class="bg-white rounded-lg border border-blue-600 transform transition-all duration-300 hover:scale-105 shadow-md p-6 text-center hover:shadow-lg transition duration-300">
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-envelope text-purple-600 text-2xl"></i>
                         </div>
@@ -410,7 +496,7 @@
                     </div>
 
                     <!-- Jam Buka Card -->
-                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                    <div class="bg-white rounded-lg border border-blue-600 transform transition-all duration-300 hover:scale-105 shadow-md p-6 text-center hover:shadow-lg transition duration-300">
                         <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-clock text-orange-600 text-2xl"></i>
                         </div>
