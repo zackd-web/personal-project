@@ -5,10 +5,10 @@
 @section('content')
 <div class="space-y-6">
     <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <h1 class="text-2xl font-bold tracking-tight">Borrowing Records</h1>
+        <h1 class="text-2xl font-bold tracking-tight">Catatan Peminjaman</h1>
         <a href="{{ route('borrowing.create') }}" class="inline-flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-md hover:bg-emerald-700">
             <i class="fas fa-plus"></i>
-            New Borrowing
+            Peminjaman Baru
         </a>
     </div>
 
@@ -17,16 +17,16 @@
         <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div class="flex border-b">
                 <a href="{{ route('borrowing.index') }}" class="px-4 py-2 text-sm font-medium {{ !request('status') ? 'border-b-2 border-emerald-500 text-emerald-600' : 'text-gray-500 hover:text-gray-700' }}">
-                    All Records
+                    Semua Catatan
                 </a>
                 <a href="{{ route('borrowing.index', ['status' => 'dipinjam']) }}" class="px-4 py-2 text-sm font-medium {{ request('status') == 'dipinjam' ? 'border-b-2 border-emerald-500 text-emerald-600' : 'text-gray-500 hover:text-gray-700' }}">
-                    Borrowed
+                    Dipinjam
                 </a>
                 <a href="{{ route('borrowing.index', ['status' => 'dikembalikan']) }}" class="px-4 py-2 text-sm font-medium {{ request('status') == 'dikembalikan' ? 'border-b-2 border-emerald-500 text-emerald-600' : 'text-gray-500 hover:text-gray-700' }}">
-                    Returned
+                    Dikembalikan
                 </a>
                 <a href="{{ route('borrowing.index', ['status' => 'terlambat']) }}" class="px-4 py-2 text-sm font-medium {{ request('status') == 'terlambat' ? 'border-b-2 border-emerald-500 text-emerald-600' : 'text-gray-500 hover:text-gray-700' }}">
-                    Overdue
+                    Melebihi Tenggat Waktu
                 </a>
             </div>
             <form method="GET" class="flex gap-2">
@@ -38,8 +38,8 @@
                            class="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 min-w-[250px]">
                 </div>
                 <button type="submit" class="px-4 py-2 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200">
-                    <i class="fas fa-filter"></i>
-                    Filter
+                    <i class="fas fa-search"></i>
+                    Cari
                 </button>
             </form>
         </div>
@@ -50,14 +50,14 @@
                 <table class="w-full">
                     <thead class="bg-gray-50 border-b">
                         <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Book</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Borrower</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Borrow Date</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Due Date</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Return Date</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Buku</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Judul</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Peminjam</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal dipinjam</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal Pengembalian</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal Kembali</th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
@@ -106,7 +106,7 @@
                         @empty
                             <tr>
                                 <td colspan="8" class="px-6 py-4 text-center text-gray-500">
-                                    No borrowing records found.
+                                    Tak ada catatan peminjaman.
                                 </td>
                             </tr>
                         @endforelse
@@ -143,14 +143,12 @@
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500">
                     </div>
                     <div>
-                        <label for="condition" class="block text-sm font-medium text-gray-700 mb-1">Book Condition</label>
+                        <label for="condition" class="block text-sm font-medium text-gray-700 mb-1">Kondisi Buku</label>
                         <select id="condition" name="condition" required
                                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                            <option value="sangat baik">Excellent</option>
-                            <option value="baik" selected>Good</option>
-                            <option value="cukup">Fair</option>
-                            <option value="buruk">Poor</option>
-                            <option value="rusak">Damaged</option>
+                            <option value="sangat baik">Bagus</option>
+                            <option value="buruk">Kotor</option>
+                            <option value="rusak">Rusak</option>
                         </select>
                     </div>
                     <div>
@@ -161,10 +159,10 @@
                 </div>
                 <div class="flex items-center gap-4 mt-6">
                     <button type="submit" class="bg-emerald-600 text-white px-4 py-2 rounded-md hover:bg-emerald-700">
-                        Confirm Return
+                       Konfirmasi
                     </button>
                     <button type="button" onclick="closeReturnModal()" class="text-gray-600 hover:text-gray-900">
-                        Cancel
+                        Batalkan
                     </button>
                 </div>
             </form>

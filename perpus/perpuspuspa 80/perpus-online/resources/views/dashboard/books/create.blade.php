@@ -57,7 +57,7 @@
                     <select id="category_id" name="category_id" required
                             class="w-full px-3 py-2 border border-gray-300 rounded-m" required
                             class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 @error('category_id') border-red-500 @enderror">
-                        <option value="">Select Category</option>
+                        <option value="">Pilih Kategori</option>
                         @foreach($categories as $category)
                             <option value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>
                                 {{ $category->name }}

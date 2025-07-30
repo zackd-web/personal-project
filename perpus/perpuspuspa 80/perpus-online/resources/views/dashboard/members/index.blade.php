@@ -18,7 +18,7 @@
             <div class="relative flex-1">
                 <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
                 <input type="text" name="search" value="{{ request('search') }}" 
-                       placeholder="Search members by name or email..."
+                       placeholder="Cari anggota berdasarkan nama atau emal..."
                        class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500">
             </div>
             <button type="submit" class="px-4 py-2 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200">
@@ -72,7 +72,7 @@
                                         <i class="fas fa-edit"></i>
                                     </a>
                                     <form method="POST" action="{{ route('members.destroy', $member) }}" class="inline" 
-                                          onsubmit="return confirm('Are you sure you want to delete this member?')">
+                                          onsubmit="return confirm('Anda yakin ingin menghapus anggota ini?')">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="text-red-600 hover:text-red-900">

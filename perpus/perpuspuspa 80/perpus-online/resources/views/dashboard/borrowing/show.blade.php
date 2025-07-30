@@ -7,9 +7,9 @@
 <div class="space-y-6">
     {{-- Header & Back Button --}}
     <div class="flex items-center justify-between">
-        <h1 class="text-2xl font-bold">Borrowing Detail</h1>
+        <h1 class="text-2xl font-bold">Detail Peminjaman</h1>
         <a href="{{ route('borrowing.index') }}" class="inline-flex items-center gap-2 bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">
-            <i class="fas fa-arrow-left"></i> Back to List
+            <i class="fas fa-arrow-left"></i> Kembali
         </a>
     </div>
 
@@ -34,7 +34,7 @@
                     <p class="text-sm text-gray-600">{{ $borrowing->book->author }}</p>
                 </div>
                 <div>
-                    <h3 class="font-medium">Borrower</h3>
+                    <h3 class="font-medium">Peminjam</h3>
                     <p class="text-gray-700">{{ $borrowing->member->name }}</p>
                     <p class="text-gray-500 text-sm">{{ $borrowing->member->email ?? '' }}</p>
                 </div>
@@ -51,15 +51,15 @@
             {{-- Dates & Condition --}}
             <div class="space-y-4">
                 <div>
-                    <h3 class="font-medium">Borrow Date</h3>
+                    <h3 class="font-medium">Tanggal Dipinjam</h3>
                     <p class="text-gray-900">{{ $borrowing->borrow_date->format('F d, Y') }}</p>
                 </div>
                 <div>
-                    <h3 class="font-medium">Due Date</h3>
+                    <h3 class="font-medium">Tanggal Pengembalian</h3>
                     <p class="text-gray-900">{{ $borrowing->due_date->format('F d, Y') }}</p>
                 </div>
                 <div>
-                    <h3 class="font-medium">Return Date</h3>
+                    <h3 class="font-medium">Tanggal Kembali</h3>
                     <p class="text-gray-900">
                         {{ $borrowing->return_date 
                             ? $borrowing->return_date->format('F d, Y') 
@@ -68,11 +68,11 @@
                 </div>
                 @if($borrowing->return_date)
                 <div>
-                    <h3 class="font-medium">Condition</h3>
+                    <h3 class="font-medium">Kondisi</h3>
                     <p class="text-gray-900 capitalize">{{ $borrowing->condition }}</p>
                 </div>
                 <div>
-                    <h3 class="font-medium">Notes</h3>
+                    <h3 class="font-medium">Catatan</h3>
                     <p class="text-gray-900">{{ $borrowing->notes ?? '-' }}</p>
                 </div>
                 @endif
@@ -88,10 +88,6 @@
                 <i class="fas fa-check-circle"></i> Mark as Returned
             </a>
         @endif
-        <a href="{{ route('borrowing.edit', $borrowing) }}"
-           class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-            <i class="fas fa-edit"></i> Edit
-        </a>
         <form action="{{ route('borrowing.destroy', $borrowing) }}" method="POST" onsubmit="return confirm('Delete this record?');">
             @csrf
             @method('DELETE')
