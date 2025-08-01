@@ -14,9 +14,9 @@
         .carousel-fade {
             transition: opacity 0.5s ease-in-out;
         }
-        /* .lightbox-overlay {
+         .lightbox-overlay {
             backdrop-filter: blur(4px);
-        } */
+        } 
     </style>
 </head>
 <body class="bg-gray-50" x-data="{ lightboxOpen: false, currentImage: '', currentImageIndex: 0 }">
@@ -343,10 +343,7 @@
              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 lightbox-overlay"
              @click="lightboxOpen = false"
              @keydown.escape.window="lightboxOpen = false">
-            
-            <div class="relative max-w-4xl max-h-full p-4" @click.stop>
-                <img :src="currentImage" alt="Lightbox Image" 
-                     class="max-w-full max-h-full object-contain rounded-lg">
+    
                 
                 <!-- Close Button -->
                 <button @click="lightboxOpen = false"
