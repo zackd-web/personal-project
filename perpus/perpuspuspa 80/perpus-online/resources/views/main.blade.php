@@ -64,7 +64,6 @@
                  x-data="{ 
                      currentSlide: 0, 
                      slides: [
-                         'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&h=1080&fit=crop',
                          'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1920&h=1080&fit=crop',
                          'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1920&h=1080&fit=crop',
                          'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=1080&fit=crop'
@@ -343,7 +342,10 @@
              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 lightbox-overlay"
              @click="lightboxOpen = false"
              @keydown.escape.window="lightboxOpen = false">
-    
+            
+            <div class="relative max-w-4xl max-h-full p-4" @click.stop>
+                <img :src="currentImage" alt="Lightbox Image" 
+                     class="max-w-full max-h-full object-contain rounded-lg">
                 
                 <!-- Close Button -->
                 <button @click="lightboxOpen = false"
