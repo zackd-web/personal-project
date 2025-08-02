@@ -41,7 +41,7 @@
                                placeholder="••••••••">
                     </div>
                     <button type="submit" class="w-full bg-emerald-600 text-white py-2 px-4 rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-                        Sign in
+                        Masuk
                     </button>
                 </form>
 
