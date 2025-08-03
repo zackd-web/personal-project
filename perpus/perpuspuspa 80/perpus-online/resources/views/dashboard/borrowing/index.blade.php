@@ -65,7 +65,7 @@
                             <tr class="hover:bg-gray-50">
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     @if($borrowing->book->cover_image)
-                                        <img src="{{ Storage::url($borrowing->book->cover_image) }}" alt="{{ $borrowing->book->title }}" class="h-12 w-8 object-cover rounded border">
+                                        <img src="{{($borrowing->book->cover_image) }}" alt="{{ $borrowing->book->title }}" class="h-12 w-8 object-cover rounded border">
                                     @else
                                         <div class="h-12 w-8 bg-gray-200 rounded border flex items-center justify-center">
                                             <i class="fas fa-book text-gray-400 text-xs"></i>
@@ -129,16 +129,16 @@
 <div id="returnModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
     <div class="flex items-center justify-center min-h-screen p-4">
         <div class="bg-white rounded-lg max-w-md w-full p-6">
-            <h3 class="text-lg font-semibold mb-4">Return Book</h3>
+            <h3 class="text-lg font-semibold mb-4">Pengembalian Buku</h3>
             <form id="returnForm" method="POST">
                 @csrf
                 <div class="space-y-4">
                     <div>
-                        <p class="text-sm text-gray-600">Book: <span id="modalBookTitle" class="font-medium"></span></p>
-                        <p class="text-sm text-gray-600">Borrower: <span id="modalBorrower" class="font-medium"></span></p>
+                        <p class="text-sm text-gray-600">Buku: <span id="modalBookTitle" class="font-medium"></span></p>
+                        <p class="text-sm text-gray-600">Peminjam: <span id="modalBorrower" class="font-medium"></span></p>
                     </div>
                     <div>
-                        <label for="return_date" class="block text-sm font-medium text-gray-700 mb-1">Return Date</label>
+                        <label for="return_date" class="block text-sm font-medium text-gray-700 mb-1">Tanggal Kembali</label>
                         <input type="date" id="return_date" name="return_date" value="{{ date('Y-m-d') }}" required
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500">
                     </div>
