@@ -87,9 +87,9 @@
                     @endphp
                     
                     @if($overdueCount > 0)
-                        <div class="text-red-600 font-medium">{{ $overdueCount }} overdue {{ $overdueCount == 1 ? 'book' : 'books' }}</div>
+                        <div class="text-red-600 font-medium">{{ $overdueCount }} Buku {{ $overdueCount == 1 ? 'terlambat' : 'books' }}</div>
                     @else
-                        <div class="text-green-600 font-medium">Tak ada buku yang telat</div>
+                        <div class="text-green-600 font-medium">Tak ada buku yang terlambat</div>
                     @endif
                 </div>
             </div>
@@ -98,7 +98,7 @@
     
     <!-- Borrowing History -->
     <div class="mt-8">
-        <h3 class="text-lg font-semibold text-gray-800 mb-4">Histori Peminjaman</h3>
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">Riwayat Peminjaman</h3>
         
         <div class="overflow-x-auto">
             <table class="min-w-full divide-y divide-gray-200">
@@ -106,8 +106,8 @@
                     <tr>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Buku</th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal Peminjaman</th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Due Date</th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Return Date</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal Pengembalian</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal Kembali</th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                     </tr>
                 </thead>
