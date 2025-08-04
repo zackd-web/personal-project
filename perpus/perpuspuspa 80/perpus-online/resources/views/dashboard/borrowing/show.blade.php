@@ -19,7 +19,7 @@
             {{-- Cover --}}
             <div class="flex justify-center items-center">
                 @if($borrowing->book->cover_image)
-                    <img src="{{ Storage::url($borrowing->book->cover_image) }}" alt="{{ $borrowing->book->title }}" class="h-48 w-32 object-cover rounded border">
+                    <img src="{{asset($borrowing->book->cover_image) }}" alt="{{ $borrowing->book->title }}" class="h-48 w-32 object-cover rounded border">
                 @else
                     <div class="h-48 w-32 bg-gray-100 rounded border flex items-center justify-center">
                         <i class="fas fa-book text-gray-400 text-2xl"></i>
