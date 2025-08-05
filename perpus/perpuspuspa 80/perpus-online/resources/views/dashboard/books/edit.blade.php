@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Book - LMAO Library')
+@section('title', 'Edit Buku - Perpustakaan')
 
 @section('content')
 <div class="space-y-6">
