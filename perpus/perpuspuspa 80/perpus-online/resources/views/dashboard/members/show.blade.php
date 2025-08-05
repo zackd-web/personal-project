@@ -24,7 +24,7 @@
                 <div class="grid grid-cols-1 gap-4">
                     <div>
                         <h4 class="text-sm font-medium text-gray-500">ID Keanggotaan</h4>
-                        <p class="text-gray-800">{{ $member->member_id }}</p>
+                        <p class="text-gray-800">{{ $member->id }}</p>
                     </div>
                     
                     <div>

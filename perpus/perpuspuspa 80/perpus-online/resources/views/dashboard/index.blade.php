@@ -116,7 +116,7 @@
                         </span>
                     </div>
                 @empty
-                    <p class="text-gray-500 text-center py-4">No recent activity</p>
+                    <p class="text-gray-500 text-center py-4">Tak ada aktivitas terbaru</p>
                 @endforelse
             </div>
         </div>

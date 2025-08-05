@@ -1,7 +1,7 @@
 {{-- resources/views/borrowings/show.blade.php --}}
 @extends('layouts.app')
 
-@section('title', 'Borrowing Detail - LMAO Library')
+@section('title', 'Detail Peminjaman -  Perpustakaan')
 
 @section('content')
 <div class="space-y-6">

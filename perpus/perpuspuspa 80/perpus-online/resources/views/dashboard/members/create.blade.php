@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Add Member')
-@section('header', 'Add New Member')
+@section('title', 'Tambahkan Anggota')
+@section('header', 'Tambah Anggota Baru')
 
 @section('content')
 <div class="bg-white rounded-lg shadow-sm p-6">
@@ -41,15 +41,6 @@
             
             <!-- Right Column -->
             <div>
-                <div class="mb-4">
-                    <label for="member_id" class="block text-sm font-medium text-gray-700 mb-1">ID Anggota</label>
-                    <input type="text" name="member_id" id="member_id" value="{{ old('member_id') }}" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                    <p class="mt-1 text-sm text-gray-500">Unique identifier for the member (e.g., MEM0001)</p>
-                    @error('member_id')
-                        <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                    @enderror
-                </div>
                 
                 <div class="mb-4">
                     <label for="join_date" class="block text-sm font-medium text-gray-700 mb-1">Tanggal Bergabung</label>
@@ -64,8 +55,8 @@
                     <label for="status" class="block text-sm font-medium text-gray-700 mb-1">Status Keanggotaan</label>
                     <select name="status" id="status" required
                         class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        <option value="active" {{ old('status') == 'active' ? 'selected' : '' }}>Active</option>
-                        <option value="inactive" {{ old('status') == 'inactive' ? 'selected' : '' }}>Inactive</option>
+                        <option value="active" {{ old('status') == 'active' ? 'selected' : '' }}>Aktif</option>
+                        <option value="inactive" {{ old('status') == 'inactive' ? 'selected' : '' }}>Tidak Aktif</option>
                     </select>
                     @error('status')
                         <p class="mt-1 text-sm text-red-600">{{ $message }}</p>

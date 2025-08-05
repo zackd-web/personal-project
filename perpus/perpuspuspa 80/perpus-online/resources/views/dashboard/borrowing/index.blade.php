@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Borrowing Records - LMAO Library')
+@section('title', 'Catatan Peminjaman - Perpustakaan')
 
 @section('content')
 <div class="space-y-6">
@@ -34,7 +34,7 @@
                 <div class="relative">
                     <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
                     <input type="text" name="search" value="{{ request('search') }}" 
-                           placeholder="Search by book or borrower..."
+                           placeholder="Cari buku atau peminjam..."
                            class="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 min-w-[250px]">
                 </div>
                 <button type="submit" class="px-4 py-2 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200">
@@ -57,7 +57,7 @@
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal Pengembalian</th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal Kembali</th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
@@ -152,8 +152,8 @@
                         </select>
                     </div>
                     <div>
-                        <label for="notes" class="block text-sm font-medium text-gray-700 mb-1">Notes</label>
-                        <input type="text" id="notes" name="notes" placeholder="Any notes about the returned book"
+                        <label for="notes" class="block text-sm font-medium text-gray-700 mb-1">Catatan</label>
+                        <input type="text" id="notes" name="notes" placeholder="Beri catatan jika perlu"
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500">
                     </div>
                 </div>

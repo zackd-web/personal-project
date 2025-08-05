@@ -43,7 +43,7 @@
             </div>
             <nav class="flex-1 overflow-auto py-4">
                 <div class="px-3 py-2">
-                    <h2 class="mb-2 px-4 text-xs font-semibold uppercase tracking-wider text-gray-500">Main</h2>
+                    <h2 class="mb-2 px-4 text-xs font-semibold uppercase tracking-wider text-gray-500">Kelola Perpus</h2>
                     <div class="space-y-1">
                         <a href="{{ route('dashboard') }}" class="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium {{ request()->routeIs('dashboard') ? 'bg-emerald-50 text-emerald-600' : 'text-gray-700 hover:bg-gray-100' }}">
                             <i class="fas fa-chart-bar w-4"></i>
