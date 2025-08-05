@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'New Borrowing - LMAO Library')
+@section('title', 'Peminjaman Baru - Perpustakaan')
 
 @section('content')
 <div class="space-y-6">
